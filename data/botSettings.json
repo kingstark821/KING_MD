@@ -1,0 +1,27 @@
+{
+  "mode": "public",
+  "botName": "KING-MD V1",
+  "ownerName": "𝗞𝗜𝗡𝗚 𝙎𝙏𝘼𝙍𝙆⁹⁹⁹",
+  "ownerNumber": "",
+  "description": "Bot WhatsApp",
+  "stickerName": "KING-MD",
+  "reactEmojis": [
+    "👍",
+    "🔥",
+    "😂",
+    "❤️",
+    "👀"
+  ],
+  "ownerEmojis": [
+    "👑"
+  ],
+  "online": false,
+  "statusLike": false,
+  "autoread": false,
+  "autotyping": false,
+  "recording": false,
+  "anticall": false,
+  "anticallMessage": "⛔ Les appels ne sont pas acceptés ici.",
+  "statusview": false,
+  "adminaction": false
+}
