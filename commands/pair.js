@@ -1,16 +1,10 @@
-const { getConfig } = require('../lib/config');
-
 module.exports = {
     name: 'pair',
-    description: 'Affiche le lien pour connecter un autre numéro au bot',
+    description: 'Indique comment obtenir un Pair Code via Telegram',
     async execute({ sock, m, from }) {
-        const cfg = getConfig();
-        if (!cfg.botUrl) {
-            return sock.sendMessage(from, { text: 'ℹ️ Aucun lien configuré pour l\'instant.' }, { quoted: m });
-        }
         await sock.sendMessage(
             from,
-            { text: `🔗 Pour connecter un numéro au bot :\n${cfg.botUrl}\n\nEntre ton numéro avec l'indicatif pays, sans le +.` },
+            { text: '🤖 Pour obtenir ton Pair Code WhatsApp, ouvre le bot Telegram @the_kingStark_Bot et utilise :\n\n/pair 509XXXXXXXX\n\nÉcris ton numéro avec l’indicatif pays, sans le +.' },
             { quoted: m }
         );
     },
